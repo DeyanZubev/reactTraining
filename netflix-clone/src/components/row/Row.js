@@ -18,6 +18,7 @@ function Row(props) {
         movieRef.on("value", (snapshot) => {
             const movies = snapshot.val();
             if (movies && movies.length !== 0) {
+                console.log(movies);
                 setMovies(() => movies);
             }
         });
